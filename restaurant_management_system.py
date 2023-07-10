@@ -29,8 +29,7 @@ else:
     c.execute(sql6)
     sql7 = "create table if not exists manager(Manager_id varchar(10) primary key,Manager_name varchar(30),Manager_adhar bigint(11) ,Manager_phone_no bigint(11),Salary int ,Bank_account varchar(20), Doj varchar(30))"
     c.execute(sql7)
-
-    sql8 = "create table if not exists salary(Job_id varchar(30) primary key,Employee_name varchar(30),Date_of_paid varchar(15),Working_days int,Bank_account_no varchar(30),Salary int,Net_salary int)"
+    sql8 = "create table if not exists salary(Job_id varchar(30),Employee_name varchar(30),Date_of_paid varchar(15),Working_days int,Bank_account_no varchar(30),Salary int,Net_salary int)"
     c.execute(sql8)
     sql9 = "create table if not exists Expenditure(Type varchar(30),cost int,date varchar(30))"
     c.execute(sql9)
